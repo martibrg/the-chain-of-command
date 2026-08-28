@@ -5,43 +5,19 @@
 }
 
 body {
-  background-color: #FFF;
+  background-color: #000;
 }
 
 .image-sequence {
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
-  width: 80%;
-  max-width: 900px; /* rappresenta la larghezza dell'immagine più grande (150cm) */
-  margin: 10px 50px 20px;
-}
-
-.seq-img {
-  display: block;
-  height: auto;
-}* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  background-color: #FFF;
-}
-
-.image-sequence {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
+  align-items: flex-end; /* allinea le immagini tra loro sul lato destro */
   width: 100%;
+  max-width: 80%;
+  margin: 0 auto; /* centra il blocco nella pagina */
 }
 
 .seq-img {
   display: block;
-  width: fit-content;
   height: auto;
-  max-width: 100%;
 }
-
-
