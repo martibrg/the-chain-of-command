@@ -17,14 +17,9 @@ body {
 
 .seq-img {
   display: block;
-  width: auto;
+  width: fit-content;
   height: auto;
   max-width: 100%;
 }
 
-.seq-img2 {
-  display: block;
-  width: auto;
-  height: auto;
-  max-width: 73,34%;
-}
+
