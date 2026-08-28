@@ -14,7 +14,7 @@ body {
   align-items: flex-end;
   width: 80%;
   max-width: 900px; /* rappresenta la larghezza dell'immagine più grande (150cm) */
-  margin-left: auto; /* spinge il blocco verso destra */
+  /* margin-left: auto; /* spinge il blocco verso destra */
 }
 
 .seq-img {
