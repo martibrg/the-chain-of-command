@@ -13,12 +13,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const toggleBtn = document.createElement('button');
   toggleBtn.type = 'button';
-  toggleBtn.textContent = '✂️ Seleziona area';
+  toggleBtn.textContent = 'select area';
   toolbar.appendChild(toggleBtn);
 
   const hint = document.createElement('div');
   hint.className = 'hint';
-  hint.textContent = 'Trascina sullo schema per selezionare un\'area. Esc per uscire.';
+  hint.textContent = 'drag over the scheme to export a piece of the pattern, press esc to exit.';
   hint.style.display = 'none';
   toolbar.appendChild(hint);
 
@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const panel = document.createElement('div');
   panel.className = 'selection-panel';
   panel.innerHTML = `
-    <img alt="Anteprima selezione" />
+    <img alt="selection preview" />
     <div class="panel-actions">
       <button type="button" class="redo-btn">Rifai</button>
       <button type="button" class="download-btn">Scarica PNG</button>
@@ -237,7 +237,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const url = URL.createObjectURL(blob);
       const a = document.createElement('a');
       a.href = url;
-      a.download = 'schema-selezione.png';
+      a.download = 'your-part.png';
       document.body.appendChild(a);
       a.click();
       a.remove();
