@@ -13,12 +13,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const toggleBtn = document.createElement('button');
   toggleBtn.type = 'button';
-  toggleBtn.textContent = 'select area';
+  toggleBtn.textContent = 'be a part';
   toolbar.appendChild(toggleBtn);
 
   const hint = document.createElement('div');
   hint.className = 'hint';
-  hint.textContent = 'drag over the scheme to export a piece of the pattern, press esc to exit.';
+  hint.textContent = 'click and drag over the scheme to export a piece of the pattern to work on, make it yours.';
   hint.style.display = 'none';
   toolbar.appendChild(hint);
 
@@ -39,8 +39,8 @@ document.addEventListener('DOMContentLoaded', () => {
   panel.innerHTML = `
     <img alt="selection preview" />
     <div class="panel-actions">
-      <button type="button" class="redo-btn">Rifai</button>
-      <button type="button" class="download-btn">Scarica PNG</button>
+      <button type="button" class="redo-btn">re-take</button>
+      <button type="button" class="download-btn">download</button>
     </div>
   `;
   document.body.appendChild(panel);
@@ -114,7 +114,7 @@ document.addEventListener('DOMContentLoaded', () => {
     toolActive = active;
     overlay.classList.toggle('active', active);
     toggleBtn.classList.toggle('active', active);
-    toggleBtn.textContent = active ? '✖ Annulla selezione' : '✂️ Seleziona area';
+    toggleBtn.textContent = active ? 'cancel selection' : 'be a part';
     hint.style.display = active ? 'block' : 'none';
     if (!active) {
       dragging = false;
