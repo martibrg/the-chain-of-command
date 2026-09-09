@@ -13,12 +13,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const toggleBtn = document.createElement('button');
   toggleBtn.type = 'button';
-  toggleBtn.textContent = 'be a part';
+  toggleBtn.textContent = 'be a part (desktop only)';
   toolbar.appendChild(toggleBtn);
 
   const hint = document.createElement('div');
   hint.className = 'hint';
-  hint.textContent = 'click and drag over the scheme to export a piece of the pattern to work on, make it yours. (desktop only)';
+  hint.textContent = 'click and drag over the scheme to export a piece of the pattern to work on, make it yours.';
   hint.style.display = 'none';
   toolbar.appendChild(hint);
 
