@@ -114,7 +114,7 @@ document.addEventListener('DOMContentLoaded', () => {
     toolActive = active;
     overlay.classList.toggle('active', active);
     toggleBtn.classList.toggle('active', active);
-    toggleBtn.textContent = active ? 'cancel selection' : 'be a part';
+    toggleBtn.textContent = active ? 'cancel selection' : 'be a part (desktop only)';
     hint.style.display = active ? 'block' : 'none';
     if (!active) {
       dragging = false;
