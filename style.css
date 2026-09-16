@@ -25,6 +25,78 @@ body {
   -webkit-user-drag: none;
 }
 
+/* ---------- Popup introduttivo ---------- */
+
+#intro-popup-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 2000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.15);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 0.35s ease;
+}
+
+#intro-popup-overlay.visible {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+#intro-popup {
+  position: relative;
+  width: min(420px, 82vw);
+  padding: 48px 40px;
+  color: #111;
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  font-size: 15px;
+  line-height: 1.6;
+  text-align: center;
+
+  background: rgba(255, 255, 255, 0.82);
+  border-radius: 24px;
+
+  /* bordi sfumati: la maschera sfuma il bianco verso i bordi */
+  -webkit-mask-image: radial-gradient(ellipse at center, #000 60%, transparent 100%);
+  mask-image: radial-gradient(ellipse at center, #000 60%, transparent 100%);
+
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+}
+
+#intro-popup p {
+  margin: 0;
+}
+
+#intro-popup-reopen {
+  position: fixed;
+  left: 20px;
+  bottom: 20px;
+  z-index: 1500;
+
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+
+  color: #111;
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  font-size: 12px;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  opacity: 0.7;
+}
+
+#intro-popup-reopen:hover {
+  opacity: 1;
+}
+
 /* ---------- Strumento di selezione ---------- */
 
 .selection-toolbar {
