@@ -11,8 +11,8 @@
     overlay.classList.remove('visible');
   }
 
-  // Si apre non appena la pagina viene caricata
-  openPopup();
+  // Si apre 3 secondi dopo il caricamento della pagina
+  setTimeout(openPopup, 3000);
 
   // Si chiude cliccando fuori dal popup (ma non sul testo per riaprirlo)
   overlay.addEventListener('click', function (e) {
